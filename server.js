@@ -9,7 +9,7 @@ app.use(express.json());
 const PORT = 3002;
 
 
-
+//ファイルパスを指定してHTMLを生成
 app.get("/", (req, res) => {
     res.sendFile(__dirname + "/index.html");
 })

@@ -93,6 +93,7 @@
             }
         });
 
+        //さらにサーバー側から返ってきた値を使って画面に出力
         socket.on("chat message", (msg) => {
             let item = document.createElement("li");
             item.textContent = msg;
